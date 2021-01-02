@@ -16,6 +16,7 @@
         display: block;
         width: 100%;
 
+
         &:focus {
             outline: none;
             
@@ -53,6 +54,11 @@
         width: 48%;
         display: inline-block;
         position: relative;
+
+        @include respond(tab-port) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
     }
 
     &__radio-input {

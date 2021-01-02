@@ -2,10 +2,21 @@
     background-color: $color-grey-dark-3;
     padding: 10rem 1rem;
     font-size: 1.4rem;
+    color: $color-grey-light-1;
+
+
+    @include respond(tab-port) {
+        width: 100%;
+        text-align: center;
+    }
 
     &__logo-box {
         text-align: center;
         margin-bottom: 8rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 6rem;
+        }
     }
 
     &__logo {
@@ -55,5 +66,9 @@
         width: 80%;
         float: right;
 
+        @include respond(tab-port) {
+            width: 100%;
+            float: none;
+        }
     }
 }

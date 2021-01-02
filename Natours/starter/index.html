@@ -288,7 +288,7 @@
                         </figure>
                         <div class="story__text">
                             <h3 class="heading-tertiary u-margin-bottom-small">
-                                I saw some shit
+                                I saw something weird
                             </h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, deserunt labore asperiores repudiandae nobis illum culpa libero praesentium ullam eius, excepturi fugit quos commodi quia neque voluptatem molestias numquam doloribus? Magnam, deserunt labore asperiores repudiandae nobis illum culpa libero praesentium ullam eius
@@ -354,7 +354,13 @@
 
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo-green-2x.png" alt="logo" class="footer__logo">
+
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" 
+                            media="(max-width: 37.5em)" alt="small logo">
+                    <img srcset="img/logo-green-2x.png 1x, img/logo-green-2x.png 2x" alt="Full log" class="footer__logo">
+                </picture>
+
             </div>
             <div class="row">
                 <div class="col-1-of-2">
