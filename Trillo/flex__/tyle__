@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: orangered;
+    padding: 10px;
+    height: 1000px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+/* 
+justify-content выравнивает по основной оси, 
+align-items выравнивает элементы внутри строки по оси cross - 90 к основной
+align-content - выравнивает по оси cross всю строку с контентом
+flex-wrap - создает новый ряд для flex элементов, если элементы не влезают в строку.
+*/
+
+.item {
+    background-color: black;
+    padding: 20px;
+    margin: 15px;
+    color: #fff;
+    font-size: 40px;
+
+    flex-grow: 1;
+}
+
+
+.i2 {
+    height: 200px;
+    order: -2;
+    flex-grow: 2;
+}
+
+.i3 {
+    order: 1;
+    flex: 1;
+}
+
+.i4 {
+    align-self: stretch;
+    order: -1;
+    flex: 0 0 300px;
+}
+/* default order for each elem in flex is 0.*/
